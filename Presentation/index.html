@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shiny Application for some common Distributions</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Shiny Application for some common Distributions">
+  <meta name="author" content="Hassan Rabie">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Shiny Application for some common Distributions</h1>
+    <h2>Course Project</h2>
+    <p>Hassan Rabie<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h1>Developing Data Products Project</h1>
+  </hgroup>
+  <article data-timings="">
+    <p>This project has two parts. </p>
+
+<ol>
+<li><p>Creating a <strong>Shiny</strong> application and deploy it on Rstudio&#39;s servers. </p>
+
+<p>1.1 A shiny application has been created. A Shiny application for some common Distributions. The application has been deployed on Rstudio&#39;s servers: <a href="https://hassanrabie.shinyapps.io/shinyproject/">https://hassanrabie.shinyapps.io/shinyproject/</a></p>
+
+<p>1.2 The source code has been uploaded to the Github link: <a href="https://github.com/HRabie/SlidifyPres1">https://github.com/HRabie/SlidifyPres1</a></p></li>
+<li><p>Using Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about the application.</p>
+
+<p>2.1 This Slidify presentation shows some common Distributions: Normal, Exponential and Poisson</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h1>1 The Normal Distribution</h1>
+  </hgroup>
+  <article data-timings="">
+    <p>The normal (or Gaussian) distribution is a very common continuous probability distribution.</p>
+
+<pre><code class="r">SampleT&lt;-rnorm(100,mean=10,sd=10)
+hist(SampleT,main=&quot;Histogram for the Normal Distribution&quot;,
+           col=&quot;red&quot;,border=&quot;white&quot;,xlab=&quot;Sample&quot; )
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h1>2 The Exponential Distribution</h1>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">SampleT&lt;-rexp(100,1/10)
+hist(SampleT,main=&quot;Histogram for the Exponential Distribution&quot;,
+           col=&quot;green&quot;,border=&quot;white&quot;,xlab=&quot;Sample&quot; )
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h1>3 The Poisson Distribution</h1>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">SampleT&lt;- rpois(100,10)
+hist(SampleT,main=&quot;Histogram for the Poisson Distribution&quot;,
+           col=&quot;blue&quot;,border=&quot;white&quot;,xlab=&quot;Sample&quot; )
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Developing Data Products Project'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='1 The Normal Distribution'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='2 The Exponential Distribution'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='3 The Poisson Distribution'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
